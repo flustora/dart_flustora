@@ -57,10 +57,12 @@ void main() async {
         walletAddress: "f2n5bol4tz7kpt7n7vtnr53iozkwh6h6flqbxfrsi",
         );
     ```
-    #### Video
-    <video  width="250" controls loop>
+    #### Image
+    <!-- <video  width="250" controls loop>
     <source src="demo/wallet_balance.mp4" type="video/mp4">
-    </video>
+    </video> -->
+
+    <img src="demo/images/wallet_balance.jpg" alt="Wallet Balance"  width="200">
 
   * [x] **getWalletValidateAddress()**
     #### Code
@@ -71,10 +73,11 @@ void main() async {
         walletAddress: "f2n5bol4tz7kpt7n7vtnr53iozkwh6h6flqbxfrsi",
         );
     ```
-    #### Video
-    <video  width="250" controls loop>
+    #### Image
+    <!-- <video  width="250" controls loop>
     <source src="demo/wallet_vaidate_address.mp4" type="video/mp4">
-    </video>
+    </video> -->
+    <img src="demo/images/wallet_vaidate_address.jpg" alt="Wallet Vaidate Address"  width="200">
 
   * [x] **getWalletVerfy()**
     #### Code
@@ -86,10 +89,12 @@ void main() async {
       signature: "Ynl0ZSBhcnJheD==",
     );
     ```
-    #### Video
-    <video  width="250" controls loop>
+    #### Image
+    <!-- <video  width="250" controls loop>
     <source src="demo/wallet_verify.mp4" type="video/mp4">
-    </video>
+    </video> -->
+
+    <img src="demo/images/wallet_verify.jpg" alt="Wallet Verify"  width="200">
 -----
 
 - ### Chain
@@ -105,10 +110,12 @@ void main() async {
       },
     );
     ```
-    #### Video
-    <video  width="250" controls loop>
+    #### Image
+    <!-- <video  width="250" controls loop>
     <source src="demo/chain_read_obj.mp4" type="video/mp4">
-    </video>
+    </video> -->
+
+    <img src="demo/images/chain_read_obj.jpg" alt="Chain Read Obj"  width="200">
   * [x] **getChainHead()**
     #### Code
     
@@ -117,10 +124,12 @@ void main() async {
 
     final answer = await Chain.getChainHead();
     ```
-    #### Video
-    <video  width="250" controls loop>
+    #### Image
+    <!-- <video  width="250" controls loop>
     <source src="demo/chain_head.mp4" type="video/mp4">
-    </video>
+    </video> -->
+
+    <img src="demo/images/chain_head.jpg" alt="Chain Head"  width="200">
   * [x] **getChainHasObj()**
     ### Code
     
@@ -133,10 +142,12 @@ void main() async {
       },
     );
     ```
-    #### Video
-    <video  width="250" controls loop>
+    #### Image
+    <!-- <video  width="250" controls loop>
     <source src="demo/chain_has_obj.mp4" type="video/mp4">
-    </video>
+    </video> -->
+
+    <img src="demo/images/chain_has_obj.jpg" alt="Chain Has Obj"  width="200">
 
 
 ## **Packages Used**
