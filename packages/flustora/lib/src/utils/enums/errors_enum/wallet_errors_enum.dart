@@ -1,0 +1,3 @@
+enum WalletErrors {
+  noConnection,
+}

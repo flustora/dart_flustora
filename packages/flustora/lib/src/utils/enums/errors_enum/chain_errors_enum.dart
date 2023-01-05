@@ -1,0 +1,3 @@
+enum ChainErrors {
+  noConnection,
+}
