@@ -18,14 +18,6 @@ class _HomeState extends State<Home> {
       },
     );
 
-    // await Wallet.getWalletVerify(
-    //   walletAddress: "f2n5bol4tz7kpt7n7vtnr53iozkwh6h6flqbxfrsi",
-    //   signature: "Ynl0ZSBhcnJheD==",
-    // );
-
-    //  Chain.getChainReadObj(cid: {
-    //   "/": "bafy2bzaceahirpzohp3nj7kl6cpktigcncewjrrvbrzn5wadvxbk6bnzsvxqi"
-    // });
     setState(() {
       response = answer;
     });

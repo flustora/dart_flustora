@@ -150,10 +150,7 @@ void main() async {
 * [x] **Dart Dev_Dependencies Used**
   - mocktail: ^0.3.0
 
-## **Authors**
-<a href="https://github.com/flustora/dart_flustora/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=flustora/dart_flustora" />
-</a>
+
 
 ***
 <p style="text-align: center"> Copyright &copy; 2023 Flustora All Rights Reserved</p>
