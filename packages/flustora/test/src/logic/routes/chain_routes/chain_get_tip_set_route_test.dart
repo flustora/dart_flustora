@@ -10,7 +10,6 @@ void main() async {
   setUp(() {
     _chainGetTipSetController = insert.sl<ChainGetTipSetController>();
   });
-  setUp(() {});
 
   group('ChainGetTipSetRoute =>', () {
     // write tests

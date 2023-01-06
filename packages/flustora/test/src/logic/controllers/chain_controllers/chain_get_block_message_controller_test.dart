@@ -17,11 +17,11 @@ void main() async {
         chainGetBlockMessageAbst: _mockChainGetBlockMessageAbst);
   });
 
-  group('ChainGetBlockController => ', () {
+  group('ChainGetBlockMessageController => ', () {
     // write tests
 
     test(
-      'getChainGetBlock of ChainGetBlockController should return an Map<String, dynamic> response which be a ("message":"good response")  ',
+      'getChainGetBlockMessage of ChainGetBlockMessageController should return an Map<String, dynamic> response which be a ("message":"good response")  ',
       () async {
         //Arrange - Setup facts, Put Expected outputs or Initilize
         when(
@@ -65,7 +65,7 @@ void main() async {
     );
 
     test(
-      'getChainGetBlock of ChainGetBlockController should return an Map<String, dynamic> response which be a bad response ("message": "You are offline")',
+      'getChainGetBlockMessage of ChainGetBlockMessageController should return an Map<String, dynamic> response which be a bad response ("message": "You are offline")',
       () async {
         //Arrange - Setup facts, Put Expected outputs or Initilize
         when(
@@ -109,7 +109,7 @@ void main() async {
     );
 
     test(
-      'getChainGetBlock of ChainGetBlockController should return an Map<String, dynamic> response which be a bad response ("message": "another error")',
+      'getChainGetBlockMessage of ChainGetBlockMessageController should return an Map<String, dynamic> response which be a bad response ("message": "another error")',
       () async {
         //Arrange - Setup facts, Put Expected outputs or Initilize
         when(() =>
