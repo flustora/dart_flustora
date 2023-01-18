@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-22.04
     defaults:
       run:
-        working-directory: /packages/flustora/
+        working-directory: ./packages/flustora/
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
