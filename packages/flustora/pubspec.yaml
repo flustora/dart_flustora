@@ -1,7 +1,8 @@
 name: flustora
 description: flustora, is a package that was developed in dart code for flutter projects. Its purpose is to contain several return functions that can communicate with the Filecoin blockchain.
 version: 1.0.0
-homepage: https://github.com/flustora/flutter_flustora/tree/main/packages/flustora
+homepage: https://github.com/flustora/dart_flustora/tree/main/packages/flustora
+repository: https://github.com/flustora/dart_flustora.git
 
 environment:
   sdk: '>=2.18.5 <3.0.0'
