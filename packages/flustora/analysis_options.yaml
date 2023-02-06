@@ -14,7 +14,6 @@ linter:
         avoid_function_literals_in_foreach_calls: false
         overridden_fields: false
         annotate_overrides: false 
-        unnecessary_null_comparison: true
         unnecessary_overrides: false
         use_full_hex_values_for_flutter_colors: false
         avoid_print: false
