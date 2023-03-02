@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_read_obj_abst.dart';
+
+import '../../../abstract/chain/chain_read_obj_abst.dart';
 
 class ChainReadObjController {
   final ChainReadObjAbst chainReadObjAbst;

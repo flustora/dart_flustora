@@ -1,3 +1,8 @@
+## 1.0.1
+
+- ETH Module
+  - creation of different functionalities that read Ethereum's requests
+---------------------------------
 ## 1.0.0
 
 - Wallet Module

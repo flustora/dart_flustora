@@ -12,11 +12,7 @@ class _HomeState extends State<Home> {
   Map<String, dynamic> response = {};
 
   void launchFunction() async {
-    final answer = await Chain.getChainHasObj(
-      cid: {
-        "/": "bafy2bzaceahirpzohp3nj7kl6cpktigcncewjrrvbrzn5wadvxbk6bnzsvxqi"
-      },
-    );
+    final answer = await Eth.getEthGetBlockByNumber(numberBlock: '0x82c9');
 
     setState(() {
       response = answer;

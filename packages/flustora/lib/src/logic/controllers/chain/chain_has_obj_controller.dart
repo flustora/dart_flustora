@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_has_obj_abst.dart';
+
+import '../../../abstract/chain/chain_has_obj_abst.dart';
 
 class ChainHasObjController {
   final ChainHasObjAbst chainHasObjAbst;

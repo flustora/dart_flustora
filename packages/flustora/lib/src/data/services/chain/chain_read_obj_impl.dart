@@ -9,11 +9,12 @@ import 'dart:io';
 
 import 'package:crossplat_objectid/crossplat_objectid.dart';
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_read_obj_abst.dart';
-import 'package:flustora/src/utils/constants/string_const.dart';
-import 'package:flustora/src/utils/enums/errors_enum/chain_errors_enum.dart';
-import 'package:flustora/src/utils/errors/failure_error.dart';
 import 'package:http/http.dart' as http;
+
+import '../../../abstract/chain/chain_read_obj_abst.dart';
+import '../../../utils/constants/string_const.dart';
+import '../../../utils/enums/errors_enum/chain_errors_enum.dart';
+import '../../../utils/errors/failure_error.dart';
 
 class ChainReadObjImpl implements ChainReadObjAbst {
   late http.Response _response;

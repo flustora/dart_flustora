@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_tip_set_weight_abst.dart';
+
+import '../../../abstract/chain/chain_tip_set_weight_abst.dart';
 
 class ChainTipSetWeightController {
   final ChainTipSetWeightAbst chainTipSetWeightAbst;

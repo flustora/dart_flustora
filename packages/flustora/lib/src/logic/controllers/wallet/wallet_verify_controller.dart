@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/wallet/wallet_verify_abst.dart';
+
+import '../../../abstract/wallet/wallet_verify_abst.dart';
 
 class WalletVerifyController {
   final WalletVerifyAbst walletVerifyAbst;

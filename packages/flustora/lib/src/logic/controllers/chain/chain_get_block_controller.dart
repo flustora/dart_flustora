@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_get_block_abst.dart';
+
+import '../../../abstract/chain/chain_get_block_abst.dart';
 
 class ChainGetBlockController {
   final ChainGetBlockAbst chainGetBlockAbst;

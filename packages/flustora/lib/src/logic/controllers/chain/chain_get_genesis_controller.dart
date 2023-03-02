@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_get_genesis_abst.dart';
+
+import '../../../abstract/chain/chain_get_genesis_abst.dart';
 
 class ChainGetGenesisController {
   final ChainGetGenesisAbst chainGetGenesisAbst;

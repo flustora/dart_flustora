@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_get_tip_set_abst.dart';
+
+import '../../../abstract/chain/chain_get_tip_set_abst.dart';
 
 class ChainGetTipSetController {
   final ChainGetTipSetAbst chainGetTipSetAbst;

@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/wallet/wallet_validate_address_abst.dart';
+
+import '../../../abstract/wallet/wallet_validate_address_abst.dart';
 
 class WalletValidateAddressController {
   final WalletValidateAddressAbst walletValidateAddressAbst;

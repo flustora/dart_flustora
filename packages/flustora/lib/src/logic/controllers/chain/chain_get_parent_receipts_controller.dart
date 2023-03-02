@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_get_parent_receipts_abst.dart';
+
+import '../../../abstract/chain/chain_get_parent_receipts_abst.dart';
 
 class ChainGetParentReceiptsController {
   final ChainGetParentReceiptsAbst chainGetParentReceiptsAbst;

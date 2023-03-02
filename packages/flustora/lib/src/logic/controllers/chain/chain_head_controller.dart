@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_head_abst.dart';
+
+import '../../../abstract/chain/chain_head_abst.dart';
 
 class ChainHeadController {
   final ChainHeadAbst chainHeadAbst;

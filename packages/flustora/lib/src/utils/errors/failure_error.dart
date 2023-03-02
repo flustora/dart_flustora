@@ -1,7 +1,8 @@
 import 'package:equatable/equatable.dart';
-import 'package:flustora/src/utils/enums/errors_enum/chain_errors_enum.dart';
-import 'package:flustora/src/utils/enums/errors_enum/paych_errors_enum.dart';
-import 'package:flustora/src/utils/enums/errors_enum/wallet_errors_enum.dart';
+
+import '../enums/errors_enum/chain_errors_enum.dart';
+import '../enums/errors_enum/eth_errors_enum.dart';
+import '../enums/errors_enum/wallet_errors_enum.dart';
 
 class Failures extends Equatable {
   static Map<String, dynamic> walletMessageError(WalletErrors error) {
@@ -28,9 +29,9 @@ class Failures extends Equatable {
     }
   }
 
-  static Map<String, dynamic> paychMessageError(PaychErrors error) {
+  static Map<String, dynamic> ethMessageError(EthErrors error) {
     switch (error) {
-      case PaychErrors.noConnection:
+      case EthErrors.noConnection:
         return {
           "message": "You are offline",
         };

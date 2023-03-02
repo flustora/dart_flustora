@@ -148,7 +148,41 @@ void main() async {
     </video> -->
 
     <img src="demo/images/chain_has_obj.jpg" alt="Chain Has Obj"  width="200">
+-----
 
+- ### ETH
+  * [x] **getEthAccounts()**
+    #### Code
+  ```dart
+    import 'package:flustora/flustora.dart';
+    final answer = await Eth.getEthAccounts();
+  ```
+    #### Image
+
+    <img src="demo/images/eth_accounts.jpg" alt="Eth Accounts"  width="200">
+
+  * [x] **getEthBlockNumber()**
+    #### Code
+    
+  ```dart
+    import 'package:flustora/flustora.dart';
+    final answer = await Eth.getEthBlockNumber(); 
+  ```
+    #### Image
+
+    <img src="demo/images/eth_block_number.jpg" alt="Eth block number Obj"  width="200">
+
+
+  * [x] **getEthGetBlockByNumber()**
+    #### Code
+    
+  ```dart
+      import 'package:flustora/flustora.dart';
+      final answer = await Eth.getEthGetBlockByNumber(numberBlock: '0x82c9');
+  ```
+    #### Image
+
+    <img src="demo/images/eth_get_block_by_number.jpg" alt="eth get block by number"  width="200">
 
 ## **Packages Used**
 * [x] **Dart Dependencies Used**

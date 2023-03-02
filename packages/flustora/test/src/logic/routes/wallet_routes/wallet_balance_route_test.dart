@@ -11,7 +11,7 @@ void main() async {
     _walletBalanceController = insert.sl<WalletBalanceController>();
   });
 
-  group('WalletRoute =>', () {
+  group('WalletBalanceRoute => ', () {
     // write tests
 
     test(

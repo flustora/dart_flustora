@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_get_parent_messages_abst.dart';
+
+import '../../../abstract/chain/chain_get_parent_messages_abst.dart';
 
 class ChainGetParentMessagesController {
   final ChainGetParentMessagesAbst chainGetParentMessagesAbst;

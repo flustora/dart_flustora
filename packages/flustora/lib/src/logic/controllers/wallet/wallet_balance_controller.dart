@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/wallet/wallet_balance_abst.dart';
+
+import '../../../abstract/wallet/wallet_balance_abst.dart';
 
 class WalletBalanceController {
   final WalletBalanceAbst walletBalanceAbst;

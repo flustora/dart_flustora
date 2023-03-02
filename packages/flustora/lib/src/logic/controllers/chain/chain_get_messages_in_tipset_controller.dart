@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:flustora/src/abstract/chain/chain_get_messages_in_tipset_abst.dart';
+
+import '../../../abstract/chain/chain_get_messages_in_tipset_abst.dart';
 
 class ChainGetMessagesInTipsetController {
   final ChainGetMessagesInTipsetAbst chainGetMessagesInTipsetAbst;
