@@ -100,7 +100,7 @@ void main() {
 
         //Act - Call the function that is to be tested
         final _verifyValue = await _ethGetBalanceImpl.getEthGetBalance(
-          accountAddress: '',
+          accountAddress: " ",
         );
 
         //Assert - Compare the actual result and expected result

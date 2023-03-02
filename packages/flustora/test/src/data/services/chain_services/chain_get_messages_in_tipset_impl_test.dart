@@ -95,7 +95,9 @@ void main() {
                 "id": ObjectId().machineId,
                 "jsonrpc": "2.0",
                 "method": "Filecoin.ChainGetMessagesInTipset",
-                "params": <List<Map<String, dynamic>>>[[]]
+                "params": <List<Map<String, dynamic>>>[
+                  [{}]
+                ]
               },
             ),
           );
@@ -113,7 +115,7 @@ void main() {
 
         //Act - Call the function that is to be tested
         final _verifyValue = await _chainGetMessagesInTipsetImpl
-            .getChainGetMessagesInTipset(tipSetKey: []);
+            .getChainGetMessagesInTipset(tipSetKey: [{}]);
 
         //Assert - Compare the actual result and expected result
         _verifyValue.fold(

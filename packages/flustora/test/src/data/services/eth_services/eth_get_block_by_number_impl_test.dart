@@ -98,7 +98,7 @@ void main() {
         //Act - Call the function that is to be tested
         final _verifyValue =
             await _ethGetBlockByNumberImpl.getEthGetBlockByNumber(
-          numberBlock: '',
+          numberBlock: " ",
         );
 
         //Assert - Compare the actual result and expected result

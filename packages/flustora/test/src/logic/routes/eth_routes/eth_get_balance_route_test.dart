@@ -22,7 +22,8 @@ void main() async {
 
       //Act - Call the function that is to be tested
 
-      final verifyValue = await Eth.getEthGasPrice();
+      final verifyValue = await Eth.getEthGetBalance(
+          accountAddress: '0x3e1F70090cf4476d788C5259F50F89E9fB88bF1a');
 
       //Assert - Compare the actual result and expected result
       expect(testValue, verifyValue);
@@ -37,7 +38,7 @@ void main() async {
 
       //Act - Call the function that is to be tested
 
-      final verifyValue = await Eth.getEthGasPrice();
+      final verifyValue = await Eth.getEthGetBalance(accountAddress: '');
 
       //Assert - Compare the actual result and expected result
       expect(testValue, verifyValue);

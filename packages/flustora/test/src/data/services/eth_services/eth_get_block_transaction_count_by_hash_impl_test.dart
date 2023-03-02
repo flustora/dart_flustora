@@ -85,8 +85,8 @@ void main() {
             body: jsonEncode({
               "id": ObjectId().machineId,
               "jsonrpc": "2.0",
-              "method": "eth_getBlockByNumber",
-              "params": [" ", true],
+              "method": "eth_getBlockTransactionCountByHash",
+              "params": [" "],
             }),
           );
 
@@ -104,7 +104,7 @@ void main() {
         //Act - Call the function that is to be tested
         final _verifyValue = await _ethGetBlockTransactionCountByHashImpl
             .getEthGetBlockTransactionCountByHash(
-          hashBlock: '',
+          hashBlock: " ",
         );
 
         //Assert - Compare the actual result and expected result

@@ -101,7 +101,7 @@ void main() {
 
         //Act - Call the function that is to be tested
         final _verifyValue = await _ethGetBlockByHashImpl.getEthGetBlockByHash(
-          tipsetBlock: '',
+          tipsetBlock: " ",
         );
 
         //Assert - Compare the actual result and expected result
