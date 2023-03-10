@@ -1,7 +1,7 @@
 name: flustora
 
 env: 
-  VSCOE_VERSION: "1.75.1"
+  VSCOE_VERSION: "1.76.0"
   DART_VERSION: "2.x"
   DART_CHANNEL: "stable"
   FLUTTER_VERSION: "3.x"

@@ -1,9 +1,3 @@
-/// Project :  Flustora 's Package
-/// Description : Ce fichier contiendra toutes les instances qui seront appelés dans tout le programme
-/// Author : James Brel
-/// onCreated : 30/12/2022
-/// onUpdted : #
-/// Updted by : #
 import 'package:get_it/get_it.dart';
 
 import 'abstract/chain/chain_get_block_abst.dart';
@@ -28,6 +22,7 @@ import 'abstract/eth/eth_get_balance_abst.dart';
 import 'abstract/eth/eth_get_block_by_hash_abst.dart';
 import 'abstract/eth/eth_get_block_by_number_abst.dart';
 import 'abstract/eth/eth_get_block_transaction_count_by_hash_abst.dart';
+import 'abstract/eth/eth_get_block_transaction_count_by_number_abst.dart';
 import 'abstract/wallet/wallet_balance_abst.dart';
 import 'abstract/wallet/wallet_validate_address_abst.dart';
 import 'abstract/wallet/wallet_verify_abst.dart';
@@ -53,6 +48,7 @@ import 'data/services/eth/eth_get_balance_impl.dart';
 import 'data/services/eth/eth_get_block_by_hash_impl.dart';
 import 'data/services/eth/eth_get_block_by_number_impl.dart';
 import 'data/services/eth/eth_get_block_transaction_count_by_hash_impl.dart';
+import 'data/services/eth/eth_get_block_transaction_count_by_number_impl.dart';
 import 'data/services/wallet/wallet_balance_impl.dart';
 import 'data/services/wallet/wallet_validate_address_impl.dart';
 import 'data/services/wallet/wallet_verify_impl.dart';
@@ -78,10 +74,17 @@ import 'logic/controllers/eth/eth_get_balance_controller.dart';
 import 'logic/controllers/eth/eth_get_block_by_hash_controller.dart';
 import 'logic/controllers/eth/eth_get_block_by_number_controller.dart';
 import 'logic/controllers/eth/eth_get_block_transaction_count_by_hash_controller.dart';
+import 'logic/controllers/eth/eth_get_block_transaction_count_by_number_controller.dart';
 import 'logic/controllers/wallet/wallet_balance_controller.dart';
 import 'logic/controllers/wallet/wallet_validate_address_controller.dart';
 import 'logic/controllers/wallet/wallet_verify_controller.dart';
 
+/// Project :  Flustora 's Package
+/// Description : Ce fichier contiendra toutes les instances qui seront appelés dans tout le programme
+/// Author : James Brel
+/// onCreated : 10/03/2022
+/// onUpdted : #
+/// Updted by : #
 final sl = GetIt.instance;
 
 Future<void> initialization() async {
@@ -130,7 +133,11 @@ Future<void> initialization() async {
       () => EthGetBlockByNumberImpl());
   sl.registerLazySingleton<EthGetBlockTransactionCountByHashAbst>(
       () => EthGetBlockTransactionCountByHashImpl());
+  sl.registerLazySingleton<EthGetBlockTransactionCountByNumberAbst>(
+      () => EthGetBlockTransactionCountByNumberImpl());
+
 //**********************************************
+
   sl.registerFactory<ChainHeadController>(
       () => ChainHeadController(chainHeadAbst: sl.call()));
   sl.registerFactory<ChainGetGenesisController>(
@@ -179,5 +186,9 @@ Future<void> initialization() async {
   sl.registerFactory<EthGetBlockTransactionCountByHashController>(() =>
       EthGetBlockTransactionCountByHashController(
           ethGetBlockTransactionCountByHashAbst: sl.call()));
+  sl.registerFactory<EthGetBlockTransactionCountByNumberController>(() =>
+      EthGetBlockTransactionCountByNumberController(
+          ethGetBlockTransactionCountByNumberAbst: sl.call()));
+
   //**********************************************
 }

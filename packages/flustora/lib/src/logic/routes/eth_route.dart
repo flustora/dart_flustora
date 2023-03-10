@@ -7,6 +7,7 @@ import '../controllers/eth/eth_get_balance_controller.dart';
 import '../controllers/eth/eth_get_block_by_hash_controller.dart';
 import '../controllers/eth/eth_get_block_by_number_controller.dart';
 import '../controllers/eth/eth_get_block_transaction_count_by_hash_controller.dart';
+import '../controllers/eth/eth_get_block_transaction_count_by_number_controller.dart';
 
 class Eth {
   static Future<Map<String, dynamic>> getEthAccounts() async =>
@@ -48,5 +49,13 @@ class Eth {
       await sl<EthGetBlockTransactionCountByHashController>()
           .getEthGetBlockTransactionCountByHash(
         hashBlock: hashBlock,
+      );
+
+  static Future<Map<String, dynamic>> getEthGetBlockTransactionCountByNumber({
+    required String numberBlock,
+  }) async =>
+      await sl<EthGetBlockTransactionCountByNumberController>()
+          .getEthGetBlockTransactionCountByNumber(
+        numberBlock: numberBlock,
       );
 }

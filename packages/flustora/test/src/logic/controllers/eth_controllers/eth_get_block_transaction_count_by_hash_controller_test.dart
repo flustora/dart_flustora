@@ -78,7 +78,7 @@ void main() {
                 .getEthGetBlockTransactionCountByHash(
                     hashBlock:
                         '0x51c95ee9dc9ec19c46d56a89ad87d6a9f554357b40db52c69240d4d09c5b7c64'))
-            .thenAnswer((_) async => const Right(
+            .thenAnswer((_) async => const Left(
                   {
                     "message": "You are offline",
                   },
